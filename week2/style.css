@@ -42,7 +42,7 @@ nav ul {
     margin: 0;
     padding: 20px;
     position: sticky;
-    top: 80px; 
+    top: 0px; 
     z-index: 100;
 }
 
