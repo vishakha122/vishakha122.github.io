@@ -1,20 +1,8 @@
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #505050;
 }
 
 /* Header Styles */
@@ -99,7 +87,12 @@ main {
 .services {
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #fff;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -153,7 +146,8 @@ main h3 {
 .cta-container {
   text-align: center;
   padding: 20px;
-  background-color: #f5f5f5;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   margin-top: 30px;
 }
 
@@ -175,8 +169,8 @@ main h3 {
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   text-align: center;
   padding: 20px;
 }
