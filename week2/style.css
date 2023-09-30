@@ -11,10 +11,10 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
+    z-index: 10;
     
 }
 
@@ -36,8 +36,10 @@ header {
 
 /* Navigation Styles */
 body nav{
-    position:sticky;
+    position: sticky;
+    z-index: 10;
     top: 0;
+    left: 0;
 
 }
 nav ul {
