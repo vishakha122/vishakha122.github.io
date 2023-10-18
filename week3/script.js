@@ -1,10 +1,12 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
@@ -28,12 +30,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-const form = document.getElementById("form");
-const username = document.getElementById("username");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
 
 const form = document.getElementById("form");
 const username = document.getElementById("username");
