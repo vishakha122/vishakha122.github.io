@@ -5,88 +5,23 @@
     <meta charset="UTF-8">
     <title>Gallery - Wanderlust Voyages</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oswald&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box
+       .gallery-container{
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
         }
 
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-
-        .mySlides {
-            display: none;
-        }
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
+        .gallery-container img {
+            width: 24%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,15 +39,15 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
-
+                <li><a href="tasks.html">Tasks</a></li>
             </ul>
         </nav>
 
         <main class="services">
             <h1>Gallery</h1>
+            <!---Slide Show -->
             <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 8</div>
                     <img src="images\1.jpg" style="width:100%">
@@ -134,7 +69,7 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext"> 5 / 8</div>
+                    <div class="numbertext">5 / 8</div>
                     <img src="images\5.webp" style="width:100%">
                 </div>
 
@@ -149,30 +84,34 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext"> 8 / 8</div>
-                    <img src="images\8.webp" style="width:100%">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images\8.jpg" style="width:100%">
                 </div>
 
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
             </div>
             <br>
 
-            <!-- The dots/circles -->
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
             </div>
             <!-- Call to Action -->
             <section class="cta-container">
-                <h2>Ready to Experience Our Services?</h2>
+                <div id="textDiv">
+                    <h2>Ready to Experience Our Services?</h2>
+                </div>
                 <p>Join us today and discover the difference we can make for you!</p>
-                <a href="contact.html" class="cta-button">Contact Us Now</a>
+                <a href="form.html" class="cta-button"><span>Contact Us Now</span></a>
             </section>
-
-
 
         </main>
         <footer>
@@ -183,6 +122,19 @@
             </ul>
             <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
         </footer>
+    </div>
+
+
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+        <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    </footer>
     </div>
 </body>
 
