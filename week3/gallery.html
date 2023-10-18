@@ -22,6 +22,52 @@
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .slideshow-img{
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .container{
+            position:relative;
+        }
+
+        .mySlides{
+            display: none;
+        }
+
+        .cursor{
+            cursor: pointer;
+        }
+
+        .prev,
+        .next{
+            cursor:pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: azure;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0,3px,3px,0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .next{
+            right: 0;
+            border-radius: 3px,0,0,3px;
+        }
+
+        .prev:hover,
+        .next:hover{
+            background-color: aliceblue;
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -61,6 +107,54 @@
                 <p>Join us today and discover the difference we can make for you!</p>
                 <a href="contact.html" class="cta-button">Contact Us Now</a>
             </section>
+
+
+            <div class = "container">
+                <div class = mySlides>
+                    <div class = "numberText">
+                         <img src="images\1.jpg" alt="Spa Image 1">
+                    </div>
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\2.jpg" alt="Spa Image 2">
+                       
+                    </div>
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\3.webp" alt="Spa Image 3">
+                       
+
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\4.jpg" alt="Spa Image 4">
+                       
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\5.webp" alt="Spa Image 5">
+                       
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\6.jpg" alt="Spa Image 6">
+                       
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\7.jpg" alt="Spa Image 7">
+                       
+                </div>
+                <div class = mySlides>
+                    <div class = "numberText">
+                        <img src="images\8.jpg" alt="Spa Image 8">
+                       
+                </div>
+                <a class = prev></a>
+                <a class = next></a>
+            </div>
 
         </main>
         <footer>
