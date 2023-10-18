@@ -43,6 +43,7 @@ header {
 nav {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 nav ul {
   background-color: #051937;
@@ -216,6 +217,7 @@ footer p {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  z-index: 1;
   margin: auto;
 }
 
