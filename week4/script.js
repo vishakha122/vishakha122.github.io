@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 var ourRequest = new XMLHttpRequest();
 ourRequest.open("GET", "https://vishakha122.github.io/week4/cities1.json");
 ourRequest.onload = function () {
@@ -93,3 +95,4 @@ function renderHTML(data) {
   }
   cityContainer.insertAdjacentHTML("beforeend", htmlString);
 }
+});
