@@ -30,7 +30,8 @@ btn.addEventListener("click", function () {
       const htmlString = `<p>The weather in ${city} is ${weatherDescription}</p>
                           <p>The temperature is ${temperature}°C with a wind speed of ${windSpeed} m/s </p>`;
 
-      weatherInfo.innerHTML = htmlString;
+      // Append the new weather information to the existing content
+      weatherInfo.innerHTML += htmlString;
     })
     .catch((error) => {
       // Step 6: Handle errors
