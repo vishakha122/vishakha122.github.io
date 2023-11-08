@@ -72,8 +72,7 @@ function renderHTML(data) {
 
   for (i = 0; i < data.length; i++) {
     htmlString +=
-      "<p>" + data[i].name + " is a city in " + data[i].country + ",</br>";
-    ("Where you can enjoy indoor places like: ");
+      "<p>" + data[i].name + " is a city in " + data[i].country + ",</br> Where you can enjoy indoor places like: ";
     for (ii = 0; ii < data[i].places.indoor.length; ii++) {
       // Loop through the indoor places of the current city.
       if (ii == 0) {
