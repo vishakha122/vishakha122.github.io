@@ -28,7 +28,7 @@ btn.addEventListener("click", function () {
       const windSpeed = data.wind.speed;
 
       const htmlString = `<p>The weather in ${city} is ${weatherDescription}</p>
-                          <p>The temperature is ${temperature}°C with a wind speed of ${windSpeed} m/s </p>;
+                          <p>The temperature is ${temperature}°C with a wind speed of ${windSpeed} m/s </p>`;
 
       weatherInfo.innerHTML = htmlString;
     })
