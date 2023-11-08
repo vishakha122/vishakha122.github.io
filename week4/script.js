@@ -53,7 +53,6 @@ function renderHTML(data) {
   cityContainer.insertAdjacentHTML("beforeend", htmlString);
 }
 
-btn.classList.add("hide-me");
 
 var cityContainer = document.getElementById("city-info");
 var btn = document.getElementById("btn");
